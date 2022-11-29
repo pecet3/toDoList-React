@@ -6,11 +6,11 @@ import Header from "./Header";
 import Container from "./Container";
 
 const tasks = [
-  { id: 1, content: "przeniesc toDoList do React.js", done: true, },
+  { id: 1, content: "przeniesc toDoList do React.js", done: false, },
   { id: 2, content: "pójść do pracy", done: false, },
 ];
 
-const hideDoneTasks = false;
+const hideDoneTasks = true;
 
 function App() {
   return (
