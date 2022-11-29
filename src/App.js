@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from "./Form"
+import Tasks from "./Tasks"
+import Buttons from "./Buttons"
+import Section from "./Section";
+import Header from "./Header";
+import Container from "./Container";
+
+const tasks = [
+  { id: 1, content: "przeniesc toDoList do React.js", done: true, },
+  { id: 2, content: "pójść do pracy", done: false, },
+];
+
+const hideDoneTasks = false;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header title="Lista Zadań" />
+       <Section title= "Dodaj nowe Zadanie" body= {<Form />} />
+       <Section 
+       title= "Do zrobienia:" 
+       body= {<Tasks tasks = {tasks} hideDoneTasks = {hideDoneTasks}/>}
+       extra={<Buttons tasks = {tasks} hideDoneTasks = {hideDoneTasks}/>}
+       extraClass = "section__header--withButtons"  />
+    </Container>
   );
 }
 
