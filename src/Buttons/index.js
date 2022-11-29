@@ -1,20 +1,18 @@
 import "./style.css";
 
-const Buttons = ({tasks, hideDoneTasks}) => {
-    let isAnyDone = tasks.some(({ done }) => done);
-    let isAllDone = tasks.every(({ done }) => done);
+const Buttons = ({tasks, hideDoneTasks}) => (
     tasks.length > 0 && (
             <div className="buttons">
                 <button
-                    className="buttons__button" disabled = {!isAnyDone}>
+                    className="buttons__button" disabled = {tasks.every(({ done }) => done)}>
                     {hideDoneTasks ? "Pokaż " : "Ukryj "}
                     Ukończone</button>
 
                 <button className="buttons__button"
-                    disabled = {isAllDone}>
+                    disabled = {tasks.every(({ done }) => done)}>
                     Ukończ Wszystkie</button>
             </div>
-        );
-};
+        )
+);
 
 export default Buttons;
