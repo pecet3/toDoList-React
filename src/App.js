@@ -7,7 +7,7 @@ import Container from "./Container";
 
 const tasks = [
   { id: 1, content: "przeniesc toDoList do React.js", done: false, },
-  { id: 2, content: "pójść do pracy", done: false, },
+  { id: 2, content: "uczyć się reacta", done: false, },
 ];
 
 const hideDoneTasks = true;
