@@ -4,7 +4,7 @@ import Buttons from "./Buttons"
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 
 
@@ -14,12 +14,16 @@ import React, {useState} from "react";
 
 const tasks = [
   { id: 1, content: "przeniesc toDoList do React.js", done: false, },
-  { id: 2, content: "uczyć się reacta", done: false, },
+  { id: 2, content: "uczyć się reacta", done: true, },
 ];
 
-const hideDone = true;
-
 function App() {
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
+  };
+
   return (
     <Container>
       <Header title="Lista Zadań" />
@@ -27,7 +31,12 @@ function App() {
       <Section
         title="Do zrobienia:"
         body={<Tasks tasks={tasks} hideDone={hideDone} />}
-        extra={<Buttons tasks={tasks} hideDone={hideDone} />}
+        extra=
+        {<Buttons
+          tasks={tasks}
+          hideDone={hideDone}
+          toggleHideDone={toggleHideDone}
+           />}
         extraClass="section__header--withButtons" />
     </Container>
   );
