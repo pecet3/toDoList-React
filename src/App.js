@@ -22,18 +22,30 @@ function App() {
 
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map(task => {
-      if(task.id === id){
-        return {...task, done: !task.done};
+      if (task.id === id) {
+        return { ...task, done: !task.done };
       };
 
       return task;
     }));
   };
+  
+  const setAllTasksDone = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+       done: true
+      })));
+    };
 
   return (
     <Container>
-      <Header title="Lista Zadań" />
-      <Section title="Dodaj nowe Zadanie" body={<Form />} />
+      <Header
+        title="Lista Zadań"
+      />
+      <Section
+        title="Dodaj nowe Zadanie"
+        body={<Form />}
+      />
       <Section
         title="Do zrobienia:"
         body={
@@ -48,6 +60,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
+            setAllTasksDone={setAllTasksDone}
           />}
         extraClass="section__header--withButtons" />
     </Container>
