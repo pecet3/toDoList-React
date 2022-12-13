@@ -8,13 +8,17 @@ import React, { useState, useEffect } from "react";
 
 
 function App() {
+  const initialTasksState = () => {
+    const tasksFromLocalStorage = JSON.parse(localStorage.getItem("tasks"));
+
+    return tasksFromLocalStorage
+      ? JSON.parse(localStorage.getItem("tasks"))
+      : []
+  };
+
+
   const [hideDone, setHideDone] = useState(false);
-  const tasksFromLocalStorage = JSON.parse(localStorage.getItem("tasks"));
-  const [tasks, setTasks] = useState(
-    tasksFromLocalStorage 
-    ? JSON.parse(localStorage.getItem("tasks"))
-    : []
-  );
+  const [tasks, setTasks] = useState(initialTasksState);
 
 
   const toggleHideDone = () => {
@@ -47,7 +51,7 @@ function App() {
       content: newTaskContent,
       done: false,
       id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-  }]);
+    }]);
   };
 
   useEffect(() => {
