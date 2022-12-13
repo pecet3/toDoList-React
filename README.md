@@ -1,5 +1,6 @@
 # ToDoList-React
-This is React implementation of my [To Do List](https://github.com/pecet3/toDoList) I made recently in JS Vanilla.
+This is React implementation of my [To Do List](https://github.com/pecet3/toDoList).
+I made it during frontend course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 #
