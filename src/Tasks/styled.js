@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Element = styled.li`
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid ${({theme})=> theme.colors.lightGrey};
     display:grid;
     grid-template-columns: auto 1fr auto;
     padding-bottom:5px;
