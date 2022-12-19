@@ -1,4 +1,3 @@
-import "./style.css";
 import { Container, HeaderContainer, Header, Content } from "./styled.js"
 import { ThemeProvider } from "styled-components"
 import { theme } from "../theme.js"
