@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import { StyledForm, Input, Button } from "./styled.js";
 import { ThemeProvider } from "styled-components"
 import { theme } from "../theme.js"
