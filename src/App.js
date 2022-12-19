@@ -57,7 +57,6 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-
   return (
     <Container>
       <Header
@@ -86,7 +85,7 @@ function App() {
             toggleHideDone={toggleHideDone}
             setAllTasksDone={setAllTasksDone}
           />}
-        extraClass="section__header--withButtons" />
+        buttons={true} />
     </Container>
   );
 }
