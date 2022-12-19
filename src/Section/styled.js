@@ -8,7 +8,7 @@ export const Container = styled.section`
 `;
 
 export const HeaderContainer = styled.div`
-    border-bottom: 2px solid rgb(223, 223, 223);
+    border-bottom: 2px solid ${({theme})=> theme.colors.lightGrey};
     padding: 15px;
     margin: 0 auto;
 
