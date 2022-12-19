@@ -29,16 +29,16 @@ export const Button = styled.button`
     transition: .5s;
 
     ${({ toggleDone }) => toggleDone && css`
-        background-color: hsl(120, 96%, 30%);
+        background-color: ${({theme})=> theme.colors.green};
         color:white;
 
         &:hover {
-            background-color: hsl(120, 96%, 40%);
+            background-color: ${({theme})=> theme.colors.lightGreen};
             cursor:pointer;
         };
 
         &:active {
-            background-color: hsl(120, 96%, 50%);
+            background-color: ${({theme})=> theme.colors.veryLightGreen};
         }
     `};
 
