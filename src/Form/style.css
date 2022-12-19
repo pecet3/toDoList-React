@@ -1,13 +1,3 @@
-.form{
-    
-    display:grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-
-}
-.form__input{
-    padding: 8px;
-}
 
 .form__button{
     background-color: teal;
@@ -18,14 +8,3 @@
     transition: .5s;
 }
 
-.form__button:hover{
-    cursor:pointer;
-    background-color: hsl(180, 100%, 20%);
-    transform: scale(1.06);
-}
-
-@media (max-width: 767px){
-    .form{
-        grid-template-columns: 1fr;
-    }
-}
