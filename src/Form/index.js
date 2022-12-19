@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { StyledForm, Input, Button } from "./styled.js";
 import { ThemeProvider } from "styled-components"
 import { theme } from "../theme.js"
 
 
+
 const Form = ({addNewTask}) => {
   const [newTaskContent, setNewTaskContent] = useState("")
+  const focusInput = useRef(null);
+
+  const focusOnInput = () => {
+    focusInput.current.focus();
+  };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -16,7 +22,6 @@ const Form = ({addNewTask}) => {
     }
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
-
   };
 
     return (
@@ -25,11 +30,11 @@ const Form = ({addNewTask}) => {
         <Input
           value={newTaskContent}
           onChange={({ target }) => setNewTaskContent(target.value)}
-          className="form__input"
           placeholder="Co jest do zrobienia?"
-          autoFocus
+          ref={focusInput}
+          autoFocus={true}
         />
-        <Button>
+        <Button onClick={focusOnInput}>
           Dodaj zadanie
         </Button>
       </StyledForm>
