@@ -7,6 +7,9 @@ export const theme = {
         green: "hsl(120, 96%, 33%)",
         lightGreen: "hsl(120, 96%, 40%)",
         veryLightGreen: "hsl(120, 96%, 50%)",
+        red: "hsl(0, 71%, 45%)",
+        darkRed: "hsl(0, 71%, 38%)",
+        veryDarkRed: "hsl(0, 71%, 32%)",
     },
     breakpoints: {
         mobile: 767

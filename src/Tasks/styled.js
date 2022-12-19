@@ -43,15 +43,15 @@ export const Button = styled.button`
     `};
 
     ${({ toggleRemove }) => toggleRemove && css`
-        background-color: rgb(222, 58, 58);
+        background-color: ${({theme})=> theme.colors.red};
         color:white;
 
         &:hover {
-            background-color: hsl(0, 71%, 38%);
+            background-color: ${({theme})=> theme.colors.darkRed};
             cursor: pointer;
         }
         &:active {
-            background-color: hsl(0, 71%, 30%);
+            background-color: ${({theme})=> theme.colors.veryDarkRed};
         }
     `}   
 `;
