@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./style.css";
 import { StyledForm, Input, Button } from "./styled.js";
 import { ThemeProvider } from "styled-components"
 import { theme } from "../theme.js"
