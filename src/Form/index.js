@@ -18,6 +18,7 @@ const Form = ({addNewTask}) => {
     }
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
+    focusOnInput();
   };
 
     return (
@@ -29,7 +30,7 @@ const Form = ({addNewTask}) => {
           ref={focusInput}
           autoFocus={true}
         />
-        <Button onClick={focusOnInput}>
+        <Button>
           Dodaj zadanie
         </Button>
       </StyledForm>
