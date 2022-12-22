@@ -26,19 +26,19 @@ export const Button = styled.button`
     border: none;
     padding:0px;
     font-size: 20px;
-    transition: .5s;
+    transition: .3s;
 
     ${({ toggleDone }) => toggleDone && css`
         background-color: ${({theme})=> theme.colors.green};
         color:white;
 
         &:hover {
-            background-color: ${({theme})=> theme.colors.lightGreen};
+            filter: brightness(125%);
             cursor:pointer;
         };
 
         &:active {
-            background-color: ${({theme})=> theme.colors.veryLightGreen};
+            filter: brightness(130%);
         }
     `};
 
@@ -47,11 +47,11 @@ export const Button = styled.button`
         color:white;
 
         &:hover {
-            background-color: ${({theme})=> theme.colors.darkRed};
+            filter: brightness(125%);
             cursor: pointer;
         }
         &:active {
-            background-color: ${({theme})=> theme.colors.veryDarkRed};
+            filter: brightness(130%);
         }
     `}   
 `;
