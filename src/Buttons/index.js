@@ -1,11 +1,7 @@
 import { Container, Button } from "./styled.js";
-import {theme} from "../theme.js";
-import {ThemeProvider } from "styled-components";
-
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllTasksDone }) => (
     tasks.length > 0 && (
-        <ThemeProvider theme={theme}>
         <Container>
             <Button
                 onClick={toggleHideDone}
@@ -20,9 +16,8 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllTasksDone }) => (
                 disabled={tasks.every(({ done }) => done)}
             >
                 Ukończ Wszystkie
-                </Button>
+            </Button>
         </Container>
-        </ThemeProvider>
     )
 );
 

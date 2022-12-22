@@ -1,12 +1,7 @@
 import {List, Element, Button, Content} from "./styled.js"
-import {theme} from "../theme.js";
-import {ThemeProvider} from "styled-components"
-
-
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
     return (
-    <ThemeProvider theme={theme}>
     <List>
         {tasks.map((task) =>
             <Element
@@ -33,8 +28,6 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
             </Element>
         )}
     </List>
-    </ThemeProvider>
-    
     )};
 
 export default Tasks
