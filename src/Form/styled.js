@@ -20,11 +20,11 @@ export const Button = styled.button`
     font-weight: 200;
     border:none;
     padding:10px;
-    transition: .5s;
+    transition: .3s;
 
     &:hover{
-        cursor:pointer;
-        background-color: ${({theme})=> theme.colors.darkTeal};
+        cursor: pointer;
+        filter: brightness(120%);
         transform: scale(1.06);
     }
 
