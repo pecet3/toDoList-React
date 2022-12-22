@@ -1,9 +1,17 @@
 # ToDoList-React
 This is the React implementation of my [To Do List](https://github.com/pecet3/toDoList).
-I made it during frontend course.
+I make it during frontend course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-#
+
+### > [Click Here to go to the demo](https://github.com/pecet3/toDoList-React) 
+
+## Technologies Used
+- React.js
+- JSX
+- create-react-app
+- Styled Components
+- Google Fonts
 
 ## Available Scripts
 
