@@ -1,9 +1,5 @@
 import { useState, useRef} from "react";
 import { StyledForm, Input, Button } from "./styled.js";
-import { ThemeProvider } from "styled-components"
-import { theme } from "../theme.js"
-
-
 
 const Form = ({addNewTask}) => {
   const [newTaskContent, setNewTaskContent] = useState("")
@@ -25,7 +21,6 @@ const Form = ({addNewTask}) => {
   };
 
     return (
-      <ThemeProvider theme={theme}>
       <StyledForm className="form" onSubmit={onFormSubmit}>
         <Input
           value={newTaskContent}
@@ -38,7 +33,6 @@ const Form = ({addNewTask}) => {
           Dodaj zadanie
         </Button>
       </StyledForm>
-      </ThemeProvider>
     )
   };
 
