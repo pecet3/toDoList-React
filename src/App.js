@@ -1,4 +1,4 @@
-import Tasks from " ./features/tasks/Tasks.js";
+import Tasks from "./features/tasks/Tasks";
 
 const App = () => {
     return (
