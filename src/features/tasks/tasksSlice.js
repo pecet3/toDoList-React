@@ -5,13 +5,13 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: [],
     },
-    reducer: {
+    reducers: {
         addTask: ({ tasks }, { payload }) => {
             tasks.push(payload);
         },
     },
 });
 
-export const {addTask} = tasksSlice.actions;
+export const { addTask } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
