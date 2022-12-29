@@ -4,7 +4,10 @@ import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { theme } from "./theme.js";
 import { ThemeProvider } from "styled-components"
+import { Provider } from "react-redux"
 import { GlobalStyle } from './GlobalStyle';
+import store from "./store"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
