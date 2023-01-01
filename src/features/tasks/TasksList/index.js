@@ -1,33 +1,38 @@
-import {List, Element, Button, Content} from "./styled.js"
+import { useSelector, useDispatch } from "react-redux";
+import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice.js";
+import { List, Element, Button, Content } from "./styled.js"
 
-const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
+const TasksList = () => {
+    const { tasks, hideDone } = useSelector(selectTasks);
+    const dispatch = useDispatch();
     return (
-    <List>
-        {tasks.map((task) =>
-            <Element
-                hidden= {task.done && hideDone}
-                key={task.id}
-            >
-                <Button
-                    toggleDone
-                    onClick={() => toggleTaskDone(task.id)}
+        <List>
+            {tasks.map((task) =>
+                <Element
+                    hidden={task.done && hideDone}
+                    key={task.id}
                 >
-                    {task.done && "✔"}
-                </Button>
-                <Content
-                    done = {task.done}
-                >
-                    {task.content}
-                </Content>
-                <Button
-                    toggleRemove
-                    onClick={() => removeTask(task.id)}
-                >
-                    🗑
-                </Button>
-            </Element>
-        )}
-    </List>
-    )};
+                    <Button
+                        toggleDone
+                        onClick={() => dispatch(toggleTaskDone(task.id))}
+                    >
+                        {task.done && "✔"}
+                    </Button>
+                    <Content
+                        done={task.done}
+                    >
+                        {task.content}
+                    </Content>
+                    <Button
+                        toggleRemove
+                        onClick={() => dispatch(removeTask(task.id))}
+                    >
+                        🗑
+                    </Button>
+                </Element>
+            )}
+        </List>
+    )
+};
 
 export default TasksList
