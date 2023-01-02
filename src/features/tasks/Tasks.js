@@ -4,7 +4,7 @@ import Buttons from "./Buttons"
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import Button from "../../common/Button";
+import ExampleTasksButton from "./ExampleTaskButton";
 import React from "react";
 
 function Tasks() {
@@ -17,16 +17,13 @@ function Tasks() {
       <Section
         title="Dodaj nowe Zadanie"
         body={<Form />}
+        extra={<ExampleTasksButton />}
       />
       <Section
         title="Do zrobienia:"
         body={<TasksList />}
         extra={<Buttons />}
         buttons="true"
-      />
-      <Section
-        title="Lorem Ipsum"
-        body={<Button />}
       />
     </Container>
   );
