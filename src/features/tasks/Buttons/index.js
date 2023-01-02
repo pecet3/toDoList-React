@@ -22,6 +22,7 @@ const Buttons = () => {
                 >
                     Ukończ Wszystkie
                 </Button>
+                
             </Container>
         )
     )
