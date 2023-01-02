@@ -18,6 +18,7 @@ function Tasks() {
         title="Dodaj nowe Zadanie"
         body={<Form />}
         extra={<ExampleTasksButton />}
+        buttons="true"
       />
       <Section
         title="Do zrobienia:"
