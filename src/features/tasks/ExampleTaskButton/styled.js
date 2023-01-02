@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledButton = styled.button`
     padding: 10px;
@@ -11,24 +11,8 @@ export const StyledButton = styled.button`
     &:hover{
         cursor: pointer;
     };
-
-    ${({ changeBackground }) => changeBackground && css`
-        background-color: ${({ theme }) => theme.colors.green};
-        transform: rotate(360deg);
-    `};
-
-    ${({ lenght }) => lenght === 1 && css`
-        transform: rotate(90deg);
-    `}
-
-    ${({ lenght }) => lenght === 2 && css`
-        transform: rotate(180deg);
-    `}
-
-    ${({ lenght }) => lenght === 3 && css`
-        transform: rotate(270deg);
-    `}
-    
-    
-
+  
     `;
+export const Wrapper = styled.div`
+    display:flex;
+`    
