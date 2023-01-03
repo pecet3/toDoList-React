@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
     
     &:hover{
         cursor: pointer;
-        filter: brightness(120%);
+        filter: brightness(105%);
         transform: scale(1.03);
     };
     
