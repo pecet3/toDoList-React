@@ -14,10 +14,6 @@ const Buttons = () => {
         tasks.length > 0 && (
             <Container>
                 <Button
-                    onClick={() => dispatch(removeAllTasks())}>
-                    Usuń wszystkie zadania
-                </Button>
-                <Button
                     onClick={() => dispatch(toggleHideDone())}
                     disabled={tasks.every(({ done }) => !done)}
                 >
@@ -29,7 +25,12 @@ const Buttons = () => {
                     onClick={() => dispatch(setAllTasksDone())}
                     disabled={tasks.every(({ done }) => done)}
                 >
-                    Ukończ Wszystkie
+                    Ukończ wszystkie
+                </Button>
+
+                <Button
+                    onClick={() => dispatch(removeAllTasks())}>
+                    Usuń wszystkie
                 </Button>
 
             </Container>
