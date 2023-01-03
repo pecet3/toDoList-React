@@ -21,7 +21,7 @@ function Tasks() {
         buttons="true"
       />
       <Section
-        title="Do zrobienia:"
+        title="Do zrobienia"
         body={<TasksList />}
         extra={<Buttons />}
         buttons="true"
