@@ -1,10 +1,10 @@
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-import Tasks from "./features/tasks/Tasks";
+import { HashRouter, Link, Switch, Route, Redirect } from "react-router-dom";
+import Tasks from "./features/tasks/TasksPage";
 import Author from "./features/author/Author";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <nav>
                 <ul>
                     <li>
@@ -25,9 +25,12 @@ const App = () => {
                     <Route path="/autor">
                         <Author />
                     </Route>
+                    <Route path="/">
+                        <Redirect to="/zadania" />
+                    </Route>
                 </Switch>
             </nav>
-        </BrowserRouter>
+        </HashRouter>
     )
 };
 
