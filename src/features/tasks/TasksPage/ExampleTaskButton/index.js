@@ -1,5 +1,5 @@
 import { StyledButton } from './styled';
-import { fetchExampleTasks, selectTasksStateLenght } from '../tasksSlice';
+import { fetchExampleTasks, selectTasksStateLenght } from '../../tasksSlice';
 import { useDispatch, useSelector } from "react-redux";
 
 const ExampleTasksButton = () => {

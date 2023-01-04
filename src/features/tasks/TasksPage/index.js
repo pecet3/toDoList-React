@@ -1,9 +1,9 @@
 import Form from "./Form"
 import TasksList from "./TasksList"
 import Buttons from "./Buttons"
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
 import ExampleTasksButton from "./ExampleTaskButton";
 import React from "react";
 
