@@ -1,10 +1,10 @@
 import { StyledButton } from './styled';
-import { fetchExampleTasks, selectTasksLenght } from '../tasksSlice';
+import { fetchExampleTasks, selectTasksStateLenght } from '../tasksSlice';
 import { useDispatch, useSelector } from "react-redux";
 
 const ExampleTasksButton = () => {
     const dispatch = useDispatch();
-    const lenght = useSelector(selectTasksLenght);
+    const lenght = useSelector(selectTasksStateLenght);
     return (
         <>
             <StyledButton
