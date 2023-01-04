@@ -1,7 +1,9 @@
+import { Wrapper } from "./styled";
+
 const Container = (props) => (
-    <main>
+    <Wrapper>
         {props.children}
-    </main>
+    </Wrapper>
 );
 
 export default Container;

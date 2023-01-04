@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         word-break: break-word;
         font-family: 'Lato', sans-serif;
-        max-width: 800px;
         margin: 0 auto;
         text-align: left;
         background-color: rgb(223, 223, 223);
