@@ -7,7 +7,7 @@ import Container from "../../../common/Container";
 import ExampleTasksButton from "./ExampleTaskButton";
 import React from "react";
 
-function Tasks() {
+function TasksPage() {
 
   return (
     <Container>
@@ -30,4 +30,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
