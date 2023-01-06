@@ -7,8 +7,7 @@ import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
   const { id } = useParams();
-  const task = useSelector( state => getTaskById(state, id));
-  console.log(id);
+  const task = useSelector(state => getTaskById(state, id));
   return (
     <Container>
       <Header
@@ -16,7 +15,7 @@ function TaskPage() {
       />
       <Section
         title={task.content}
-        body={<>Ukończone: <strong>{task.done ? "tak": "nie"}</strong></>}
+        body={<>Ukończone: <strong>{task.done ? "tak" : "nie"}</strong></>}
       />
     </Container>
   );
