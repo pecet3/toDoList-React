@@ -8,7 +8,6 @@ import ExampleTasksButton from "./ExampleTaskButton";
 import React from "react";
 
 function TasksPage() {
-
   return (
     <Container>
       <Header
