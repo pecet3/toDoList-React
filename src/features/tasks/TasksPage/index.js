@@ -16,7 +16,9 @@ function TasksPage() {
       />
       <Section
         title="Wyszukiwarka"
-        body={<Search/>}
+        extra={<Search search="true"/>}
+        buttons="true"
+        displayNone="true"
       />
       <Section
         title="Dodaj nowe Zadanie"
