@@ -32,7 +32,7 @@ const Form = () => {
   };
 
     return (
-      <StyledForm className="form" onSubmit={onFormSubmit}>
+      <StyledForm onSubmit={onFormSubmit}>
         <Input
           value={newTaskContent}
           onChange={({ target }) => setNewTaskContent(target.value)}
