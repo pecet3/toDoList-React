@@ -15,16 +15,16 @@ function TasksPage() {
         title="Lista Zadań"
       />
       <Section
-        title="Wyszukiwarka"
-        extra={<Search search="true"/>}
-        buttons="true"
-        displayNone="true"
-      />
-      <Section
         title="Dodaj nowe Zadanie"
         body={<Form />}
         extra={<ExampleTasksButton />}
         buttons="true"
+      />
+      <Section
+        title="Wyszukiwarka"
+        extra={<Search search="true" />}
+        buttons="true"
+        displayNone="true"
       />
       <Section
         title="Do zrobienia"
