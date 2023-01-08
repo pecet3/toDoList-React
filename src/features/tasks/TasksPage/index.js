@@ -22,7 +22,7 @@ function TasksPage() {
       />
       <Section
         title="Wyszukiwarka"
-        extra={<Search search="true" />}
+        extra={<Search/>}
         buttons="true"
         displayNone="true"
       />
