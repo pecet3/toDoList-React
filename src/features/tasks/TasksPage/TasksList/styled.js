@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     padding:0;
@@ -64,4 +65,18 @@ export const Content = styled.p`
     ${({done}) => done && css`
         text-decoration: line-through;
     `}
+
+    &:visited {
+        text-decoration: none;
+    }
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({theme})=> theme.colors.darkTeal};
+    transition: .3s;
+
+    &.visited {
+        color: ${({theme})=> theme.colors.darkTeal};
+    }
 `;
