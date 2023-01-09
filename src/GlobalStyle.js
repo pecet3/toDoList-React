@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         text-align: left;
         background-color: rgb(223, 223, 223);
         text-overflow: clip;
-        padding: 10px;
     };
+
 
 `;
