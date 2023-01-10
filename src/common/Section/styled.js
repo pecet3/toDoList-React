@@ -13,9 +13,9 @@ export const HeaderContainer = styled.div`
     margin: 0 auto;
 
     ${({ buttons }) => buttons && css`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         flex-direction: column;
@@ -27,13 +27,13 @@ export const HeaderContainer = styled.div`
 
 
 export const Header = styled.h2`
-    margin: 0;    
+    margin: 0;
 `;
 
 export const Content = styled.div`
     padding: 15px;
     
-    ${({displayNone})=> displayNone && css`
+    ${({ displayNone }) => displayNone && css`
         display: none;
     `};
 `;
