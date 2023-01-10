@@ -1,5 +1,10 @@
 import { StyledButton } from './styled';
-import { fetchExampleTasks, selectFetchError, selectFetchLoading, selectTasksStateLenght } from '../../tasksSlice';
+import {
+    fetchExampleTasks,
+    selectFetchError,
+    selectFetchLoading,
+    selectTasksStateLenght
+} from '../../tasksSlice';
 import { useDispatch, useSelector } from "react-redux";
 
 const ExampleTasksButton = () => {
@@ -14,8 +19,8 @@ const ExampleTasksButton = () => {
                 disabled=
                 {
                     lenght > 0 ? true : false
-                    || loading ? true : false
-                    || error ? true : false
+                        || loading
+                        || error
                 }
             >
                 {loading ? loading : error ? error : "Pobierz Przykładowe Zadania"}
