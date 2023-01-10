@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
     display: flex;
     gap: 10px;
 
@@ -12,18 +12,4 @@ export const Container = styled.div`
 
 `;
 
-export const Button = styled.button`
-    border: none;
-    background-color: transparent;
-    color: ${({theme})=> theme.colors.darkTeal};
-    transition: .3s;
-
-    &:disabled{
-        color: ${({theme})=> theme.colors.lightTeal};
-    }
-    &:hover{
-        cursor: pointer;
-        transform: scale(1.03);
-    }
-`;
 
