@@ -1,6 +1,6 @@
 # ToDoList-React
-This is the React implementation of my [To Do List](https://github.com/pecet3/toDoList).
-I make it during frontend course.
+Welcome to my To Do List which was made in React. You can add tasks to do, remove tasks, mark tasks as done and get example tasks. Apart from that there is a subpage, where I describe myself :).
+I make this project during frontend course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,6 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - JSX
 - create-react-app
 - Styled Components
+- react-redux
+- react-saga
 - Google Fonts
 
 ## Available Scripts
