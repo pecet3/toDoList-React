@@ -73,7 +73,7 @@ export const Content = styled.p`
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
-    color: ${({theme})=> theme.colors.darkTeal};
+    color: ${({theme})=> theme.colors.mineShaft};
     transition: .3s;
 
     &.visited {
