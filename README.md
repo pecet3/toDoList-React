@@ -15,6 +15,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - react-saga
 - Google Fonts
 
+## Animated Screenshot
+![](screenshots/screenshotDesktop.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
