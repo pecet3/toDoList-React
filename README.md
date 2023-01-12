@@ -4,7 +4,7 @@ I make this project during frontend course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### > [Click Here to go to the demo](https://github.com/pecet3/toDoList-React) 
+### > [Click Here to go to the demo](https://pecet3.github.io/toDoList-React/#/zadania) 
 
 ## Technologies Used
 - React.js
