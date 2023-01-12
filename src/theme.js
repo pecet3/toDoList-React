@@ -6,6 +6,7 @@ export const theme = {
         lightGrey: "rgb(223, 223, 223)",
         green: "hsl(120, 96%, 33%)",
         red: "hsl(0, 71%, 45%)",
+        mineShaft: "#2E2E2E",
     },
     breakpoints: {
         mobile: 767
