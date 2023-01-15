@@ -9,6 +9,7 @@ export const theme = {
         mineShaft: "#2E2E2E",
         tundora: "#474747",
         ghost: "#C8CBD0",
+        osloGray: "#919497",
     },
     breakpoints: {
         mobile: 767

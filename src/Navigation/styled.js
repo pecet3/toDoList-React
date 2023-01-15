@@ -48,7 +48,7 @@ export const ButtonBackground = styled.div`
     
 `
 export const Button = styled.button`
-    background-color: grey;
+    background-color: ${({ theme }) => theme.colors.osloGray};
     border: none;
     padding: 2px;
     margin: 0px;
