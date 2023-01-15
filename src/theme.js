@@ -7,6 +7,8 @@ export const theme = {
         green: "hsl(120, 96%, 33%)",
         red: "hsl(0, 71%, 45%)",
         mineShaft: "#2E2E2E",
+        tundora: "#474747",
+        ghost: "#C8CBD0",
     },
     breakpoints: {
         mobile: 767
