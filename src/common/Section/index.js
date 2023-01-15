@@ -6,7 +6,9 @@ const Section = ({ title, body, extra, buttons, displayNone }) => {
   const darkTheme = useSelector(selectDarkTheme);
   return (
     <Container darkTheme={darkTheme}>
-      <HeaderContainer buttons={buttons}>
+      <HeaderContainer
+        buttons={buttons}
+        displayNone={displayNone}>
         <Header >{title}</Header>
         {extra}
       </HeaderContainer>
