@@ -5,6 +5,10 @@ export const Container = styled.section`
     background-color: white;
     margin: 15px auto;
     text-align: left;
+
+    ${({ darkTheme })=> darkTheme && css`
+        background-color: ${({theme})=> theme.colors.ghost};
+    `}
 `;
 
 export const HeaderContainer = styled.div`
