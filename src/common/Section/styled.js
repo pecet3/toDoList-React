@@ -5,9 +5,10 @@ export const Container = styled.section`
     background-color: white;
     margin: 15px auto;
     text-align: left;
+    border-radius: 10px;
 
-    ${({ darkTheme })=> darkTheme && css`
-        background-color: ${({theme})=> theme.colors.ghost};
+    ${({ darkTheme }) => darkTheme && css`
+        background-color: ${({ theme }) => theme.colors.ghost};
     `}
 `;
 
@@ -26,6 +27,10 @@ export const HeaderContainer = styled.div`
         align-items: flex-start;
     }
     `}
+
+    ${({ displayNone }) => displayNone && css`
+        border-bottom: none;
+    `};
 
 `;
 
