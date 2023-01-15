@@ -18,6 +18,7 @@ export const Button = styled.button`
     border:none;
     padding:10px;
     transition: .3s;
+    border-radius: 10px;
 
     &:hover{
         cursor: pointer;
