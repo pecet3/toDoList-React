@@ -15,9 +15,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Lato', sans-serif;
         margin: 0 auto;
         text-align: left;
-        background-color: rgb(223, 223, 223);
+        background-color: ${({theme})=> theme.colors.lightGrey};
         text-overflow: clip;
     };
-
 
 `;
