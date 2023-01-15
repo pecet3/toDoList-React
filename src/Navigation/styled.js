@@ -36,3 +36,11 @@ export const Li = styled.li`
     padding: 10px 15px;
 `;
 
+export const Button = styled.button`
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    
+`;
