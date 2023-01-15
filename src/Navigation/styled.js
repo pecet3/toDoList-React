@@ -41,6 +41,7 @@ export const ButtonBackground = styled.div`
     width: 50px;
     padding: 2px;
     border-radius: 15px;
+    outline: 2px solid ${({ theme }) => theme.colors.darkTeal};
     
     ${({ darkTheme }) => darkTheme && css`
         background-color: ${({ theme }) => theme.colors.mineShaft};
