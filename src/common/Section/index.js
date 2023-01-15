@@ -1,6 +1,6 @@
 import { Container, HeaderContainer, Header, Content } from "./styled.js"
 import { useSelector } from "react-redux";
-import { selectDarkTheme } from "../../Navigation/themeButtonSlice.js";
+import { selectDarkTheme } from "../../Navigation/ThemeSwitch/themeSwitchSlice.js";
 
 const Section = ({ title, body, extra, buttons, displayNone }) => {
   const darkTheme = useSelector(selectDarkTheme);

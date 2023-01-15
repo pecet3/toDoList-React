@@ -1,19 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toAuthor, toTasks } from "../routes";
-import { selectDarkTheme, toggleDarkTheme } from "./themeButtonSlice";
+import { selectDarkTheme, toggleDarkTheme } from "./ThemeSwitch/themeSwitchSlice";
 import {
     Li,
     Nav,
     StyledNavLink,
     Ul,
-    Button,
-    ButtonBackground
 } from "./styled";
+import ThemeSwitch from "./ThemeSwitch";
+
 
 
 export const Navigation = () => {
-    const dispatch = useDispatch();
-    const darkTheme = useSelector(selectDarkTheme);
     return (
         <Nav>
             <Ul>
@@ -28,17 +26,7 @@ export const Navigation = () => {
                     </StyledNavLink>
                 </Li>
                 <Li>
-                    <ButtonBackground
-                        darkTheme={darkTheme}>
-                        <Button
-                            onClick={() => dispatch(toggleDarkTheme())}
-                            darkTheme={darkTheme}>
-                            {darkTheme ?
-                                "🌙" :
-                                "🌞"}
-                        </Button>
-                    </ButtonBackground>
-
+                    <ThemeSwitch/>
                 </Li>
             </Ul>
         </Nav>
