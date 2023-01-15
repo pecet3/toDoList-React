@@ -7,11 +7,11 @@ const ThemeSwitch = () => {
     const darkTheme = useSelector(selectDarkTheme);
     return (
         <SwitchBody
-            darkTheme={darkTheme}>
+            darkTheme={darkTheme}
+            title="Zmień motwy strony">
             <Switch
                 onClick={() => dispatch(toggleDarkTheme())}
-                darkTheme={darkTheme}
-                title="Zmień motwy strony">
+                darkTheme={darkTheme}>
                 {darkTheme ?
                     "🌙" :
                     "🌞"}
