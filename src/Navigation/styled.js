@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledNavLink = styled(NavLink)`
@@ -18,11 +18,10 @@ export const StyledNavLink = styled(NavLink)`
 
 export const Nav = styled.nav`
     padding: 1px;
-    background-color: ${({theme})=>theme.colors.teal};
+    background-color: ${({ theme }) => theme.colors.teal};
     text-align: center;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     font-size: 20px;
 `;
 
@@ -36,11 +35,30 @@ export const Li = styled.li`
     padding: 10px 15px;
 `;
 
-export const Button = styled.button`
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 0px;
-    margin: 0px;
+export const ButtonBackground = styled.div`
+    background-color: ${({ theme }) => theme.colors.lightGrey};
+    display:flex;
+    width: 50px;
+    padding: 2px;
+    border-radius: 10px;
     
+    ${({ darkTheme }) => darkTheme && css`
+        background-color: ${({ theme }) => theme.colors.mineShaft};
+    `}
+    
+`
+export const Button = styled.button`
+    background-color: grey;
+    border: none;
+    padding: 2px;
+    margin: 0px;
+    border-radius: 50%;
+    transition: .3s;
+    font-size: 16px;
+
+    ${({ darkTheme }) => darkTheme && css`
+        translate: 20px;
+    `}
 `;
+
+

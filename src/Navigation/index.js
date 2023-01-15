@@ -6,7 +6,8 @@ import {
     Nav,
     StyledNavLink,
     Ul,
-    Button
+    Button,
+    ButtonBackground
 } from "./styled";
 
 
@@ -27,15 +28,22 @@ export const Navigation = () => {
                     </StyledNavLink>
                 </Li>
                 <Li>
-                    <Button
-                        onClick={() => dispatch(toggleDarkTheme())}>
-                        {darkTheme ?
-                            "🌞 tryb jasny" :
-                            "🌙 tryb ciemny"}
-                    </Button>
+                    <ButtonBackground
+                        darkTheme={darkTheme}>
+                        <Button
+                            onClick={() => dispatch(toggleDarkTheme())}
+                            darkTheme={darkTheme}>
+                            {darkTheme ?
+                                "🌙" :
+                                "🌞"}
+                        </Button>
+                    </ButtonBackground>
+
                 </Li>
             </Ul>
         </Nav>
     )
 };
+
+
 
