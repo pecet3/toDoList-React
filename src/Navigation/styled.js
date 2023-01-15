@@ -40,7 +40,7 @@ export const ButtonBackground = styled.div`
     display:flex;
     width: 50px;
     padding: 2px;
-    border-radius: 10px;
+    border-radius: 15px;
     
     ${({ darkTheme }) => darkTheme && css`
         background-color: ${({ theme }) => theme.colors.mineShaft};
