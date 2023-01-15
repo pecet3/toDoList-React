@@ -10,7 +10,8 @@ const ThemeSwitch = () => {
             darkTheme={darkTheme}>
             <Switch
                 onClick={() => dispatch(toggleDarkTheme())}
-                darkTheme={darkTheme}>
+                darkTheme={darkTheme}
+                title="Zmień motwy strony">
                 {darkTheme ?
                     "🌙" :
                     "🌞"}
