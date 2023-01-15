@@ -56,6 +56,10 @@ export const Button = styled.button`
     transition: .3s;
     font-size: 16px;
 
+    &:hover{
+        cursor: pointer;
+    }
+
     ${({ darkTheme }) => darkTheme && css`
         translate: 20px;
     `}
