@@ -30,6 +30,7 @@ export const Ul = styled.ul`
     display:flex;
     padding-left: 0;
     margin: 0 auto;
+    align-items: flex-end;
 `;
 export const Li = styled.li`
     padding: 10px 15px;
