@@ -1,6 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
 import { toAuthor, toTasks } from "../routes";
-import { selectDarkTheme, toggleDarkTheme } from "./ThemeSwitch/themeSwitchSlice";
 import {
     Li,
     Nav,
@@ -26,7 +24,7 @@ export const Navigation = () => {
                     </StyledNavLink>
                 </Li>
                 <Li>
-                    <ThemeSwitch/>
+                    <ThemeSwitch />
                 </Li>
             </Ul>
         </Nav>
